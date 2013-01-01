@@ -7,15 +7,11 @@ set -e
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/ubuntu/matt-preston/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
-CMD="/usr/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
-action="$1"
+CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+AS_USER=ubuntu
 set -u
 
-test -f "$INIT_CONF" && . $INIT_CONF
-
 old_pid="$PID.oldbin"
-
-cd $APP_ROOT || exit 1
 
 sig () {
   test -s "$PID" && kill -$1 `cat $PID`
