@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16eb4223-9eb3-4c7e-83ff-416cb2138eb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/unicorn.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/unicorn_init.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/matt-preston.iml" afterPath="$PROJECT_DIR$/.idea/matt-preston.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn.rb" afterPath="$PROJECT_DIR$/config/unicorn.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn_init.sh" afterPath="$PROJECT_DIR$/config/unicorn_init.sh" />
     </list>
     <ignored path="matt-preston.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +31,16 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="42" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
+            <state line="2" column="1" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -47,19 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="unicorn.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="6" column="9" selection-start="192" selection-end="192" vertical-scroll-proportion="0.22273782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn_init.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="unicorn_init.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="69" selection-start="374" selection-end="374" vertical-scroll-proportion="0.3712297">
+            <state line="8" column="27" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,16 +115,11 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="54" column="23" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1356974887000" expanded="true" signature="37:1835" placeholder="do ... end" />
+                <marker date="1356974887000" expanded="true" signature="85:1509" placeholder="#..." />
+                <marker date="1356974887000" expanded="true" signature="1544:1831" placeholder="#..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,13 +148,14 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/database.example.yml" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/config/unicorn.rb" />
         <option value="$PROJECT_DIR$/config/nginx.conf" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
+        <option value="$PROJECT_DIR$/config/unicorn.rb" />
       </list>
     </option>
   </component>
@@ -236,7 +240,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trunk/rails/kachng" />
     <property name="FullScreen" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
@@ -609,12 +613,64 @@
       <created>1357048670743</created>
       <updated>1357048670743</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Git commit">
+      <created>1357054554071</created>
+      <updated>1357054554071</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Debugging bundler issues. Need to re-instate the clean up task.">
+      <created>1357056912366</created>
+      <updated>1357056912366</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Debugging bundler issues. Need to re-instate the clean up task.">
+      <created>1357057136672</created>
+      <updated>1357057136672</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Specify which version of Ruby for the rvm.">
+      <created>1357057210433</created>
+      <updated>1357057210433</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Specify which version of Ruby for the rvm.">
+      <created>1357057420234</created>
+      <updated>1357057420234</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Specify which version of Ruby for the rvm.">
+      <created>1357057586041</created>
+      <updated>1357057586041</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Specify which version of Ruby for the rvm.">
+      <created>1357057648341</created>
+      <updated>1357057648341</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Specify which version of Ruby for the rvm.">
+      <created>1357062054858</created>
+      <updated>1357062054858</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Specify which version of Ruby for the rvm.">
+      <created>1357063435917</created>
+      <updated>1357063435917</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Specify which version of Ruby for the rvm.">
+      <created>1357063579792</created>
+      <updated>1357063579792</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Specify which version of Ruby for the rvm.">
+      <created>1357063614457</created>
+      <updated>1357063614457</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Specify which version of Ruby for the rvm.">
+      <created>1357063928103</created>
+      <updated>1357063928103</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Specify which version of Ruby for the rvm.">
+      <created>1357064873542</created>
+      <updated>1357064873542</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4853147" sideWeight="0.9906743" order="7" side_tool="false" content_ui="tabs" />
@@ -622,7 +678,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682927" sideWeight="0.67132866" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682927" sideWeight="0.67132866" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -671,7 +727,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Specify which version of Ruby for the rvm." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -685,6 +741,8 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Git commit" />
+    <MESSAGE value="Debugging bundler issues. Need to re-instate the clean up task." />
+    <MESSAGE value="Specify which version of Ruby for the rvm." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,7 +779,11 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="23" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1356974887000" expanded="true" signature="37:1835" placeholder="do ... end" />
+            <marker date="1356974887000" expanded="true" signature="85:1509" placeholder="#..." />
+            <marker date="1356974887000" expanded="true" signature="1544:1831" placeholder="#..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,23 +803,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1384" selection-end="1526" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -769,16 +817,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="42" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
+        <state line="37" column="20" selection-start="794" selection-end="794" vertical-scroll-proportion="0.66589326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+        <state line="32" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -790,9 +859,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
+    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="69" selection-start="374" selection-end="374" vertical-scroll-proportion="0.3712297">
+        <state line="6" column="9" selection-start="192" selection-end="192" vertical-scroll-proportion="0.22273782">
           <folding />
         </state>
       </provider>
