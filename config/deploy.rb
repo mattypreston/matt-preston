@@ -28,7 +28,7 @@ namespace :deploy do
     task command, roles: :app, except: {no_release: true} do
       run "/etc/init.d/unicorn_#{application} #{command}"
       desc "Restarting Nginx"
-      run "sudo /etc/init.d/nginx restart"
+      run "#{sudo} service nginx #{command}"
     end
   end
 
