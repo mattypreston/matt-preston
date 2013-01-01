@@ -8,6 +8,7 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/ubuntu/apps/matt-preston/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+action="$1"
 AS_USER=ubuntu
 
 set -u
