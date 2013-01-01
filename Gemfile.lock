@@ -103,6 +103,8 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    rvm-capistrano (1.2.7)
+      capistrano (>= 2.0.0)
     sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -136,12 +138,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano
   coffee-rails (~> 3.2.1)
   jquery-rails
   less-rails
   pg
   rails (= 3.2.8)
+  rvm-capistrano
   sass-rails (~> 3.2.3)
   therubyracer
   twitter-bootstrap-rails
