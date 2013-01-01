@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
-set :rvm_ruby_string, "1.9.3-p325"
+set :rvm_ruby_string, "1.9.3-p327"
 set :rvm_type, :user
 
 server "54.235.197.197", :web, :app, :db, primary: true
