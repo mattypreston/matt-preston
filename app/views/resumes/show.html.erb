@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @resume.title %>
+</p>
+
+<p>
+  <b>Skills:</b>
+  <%= @resume.skills %>
+</p>
+
+<p>
+  <b>Experience:</b>
+  <%= @resume.experience %>
+</p>
+
+<p>
+  <b>Objective:</b>
+  <%= @resume.objective %>
+</p>
+
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>
