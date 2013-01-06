@@ -21,6 +21,7 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" #Keep only the last 5 releases
+before "deploy:assets:precompile", "bundle:install"
 
 namespace :deploy do
   %w[start stop restart].each do |command|
