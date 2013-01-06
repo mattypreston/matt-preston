@@ -1,4 +1,5 @@
 class ResumesController < ApplicationController
+
   # GET /resumes
   # GET /resumes.json
   def index

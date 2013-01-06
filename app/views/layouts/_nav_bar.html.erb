@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
       <div class="container">
@@ -13,8 +14,10 @@
             <li><%= link_to "Hobbies" %></li>
             <li><%= link_to "Contact Me", users_path %></li>
             <li><%= link_to "Blog", articles_path %></li>
+            <li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>
           </ul>
         </div>
       </div>
   </div>
 </div>
+<% end %>

@@ -1,18 +1,16 @@
-<!--div id="wrap">
-    <div id="main" class="container clear-top">
-      <div class="row">
-        <div class="span9"><%#= yield %></div>
-        <div class="span3">
-          <h2>About Me</h2>
-          I am a scrum master and agile evangelist currently working at Micros.
-        </div>
-      </div>
-    </div>
-</div-->
-
 <div class="container">
 	<div class="row page-wrap">
+      <% if user_signed_in? %>
+        <%= render :partial=> 'layouts/nav_bar' %>
+      <% else %>
         <%= render :partial=> 'layouts/header' %>
+      <% end %>
+      <% flash.each do |name, msg| %>
+          <% if msg.is_a?(String) %>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <% end %>
+        <% end %>
+
         <%=	 yield %>
         <%= render :partial=> 'layouts/footer' %>
     </div>
