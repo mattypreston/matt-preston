@@ -1,0 +1,23 @@
+<!-- begin .section-blog -->
+<div class="section section-blog section-last row">
+  <h3 class="css3-gradient-2"><i class="icon-paper-clip"></i>Latest from my blog</h3>
+  <% if @articles.present? %>
+      <% @articles.each do |blog_entry| %>
+          <!-- begin .blog-item -->
+          <div class="section-blog-item row-fluid">
+            <div class="blog-item-thumbnail span4">
+              <div class="blog-item-thumbnail-wrap">
+                <a href="#" title="title goes here"><img src="assets/asset.png" alt="alt goes here"/></a>
+              </div>
+            </div>
+            <div class="blog-item-excerpt span8">
+              <h4><a href="#" title="title goes here"><%= blog_entry.name %></a></h4>
+              <div class="blog-item-meta"><span><i class="icon-calendar"></i><small><%= blog_entry.created_at %></small></span><span><i class="icon-comments"></i><small><a href="#">0 comments</a></small></span></div>
+              <p><%= blog_entry.content %></p>
+            </div>
+          </div>
+          <!-- end .blog-item -->
+      <% end %>
+  <% end %>
+</div>
+<!-- end .section-blog -->

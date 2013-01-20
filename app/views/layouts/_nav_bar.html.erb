@@ -10,8 +10,7 @@
         <a class="brand" href="#">Matt Preston</a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Skills and Experience" %></li>
-            <li><%= link_to "Hobbies" %></li>
+            <li><%= link_to "Skills and Experience", resumes_path %></li>
             <li><%= link_to "Contact Me", users_path %></li>
             <li><%= link_to "Blog", articles_path %></li>
             <li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>

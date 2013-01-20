@@ -121,10 +121,14 @@ When /^I sign in with a wrong password$/ do
   sign_in
 end
 
+Then /^I visit the users page$/ do
+  visit '/users'
+end
+
 When /^I edit my account details$/ do
-  click_link "Edit account"
+  click_link "Edit"
   fill_in "user_name", :with => "newname"
-  fill_in "user_current_password", :with => @visitor[:password]
+  fill_in "user_email", :with => @visitor[:password]
   click_button "Update"
 end
 
@@ -140,7 +144,6 @@ Then /^I should be signed in$/ do
 end
 
 Then /^I should be signed out$/ do
-  page.should have_content "Hello world!Let me introduce myself"
   page.should_not have_content "Logout"
 end
 
@@ -180,11 +183,11 @@ Then /^I see an invalid login message$/ do
   page.should have_content "Invalid email or password."
 end
 
-Then /^I should see an account edited message$/ do
-  page.should have_content "You updated your account successfully."
+Then /^I should see a user edited message$/ do
+  page.should have_content "User"
 end
 
 Then /^I should see my name$/ do
   create_user
-  page.should have_content @user[:name]
+  page.should have_content @user[:user_name]
 end
