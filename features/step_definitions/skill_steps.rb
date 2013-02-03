@@ -19,10 +19,10 @@ When /^I add a new skill$/ do
 end
 
 Then /^I should see that my new skill has been added$/ do
-  page.should have_content "Java"
-  page.should have_content "80"
+  page.should have_content @skill[:skill_name]
+  page.should have_content @skill[:skill_level]
 end
 
 Then /^I should see that my skill has been added to my resume$/ do
-  page.should have_content "Java"
+  page.should have_content @skill[:skill_name]
 end
