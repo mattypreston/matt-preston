@@ -1,5 +1,8 @@
 MattPreston::Application.routes.draw do
 
+  resources :skills
+
+
   devise_for :users
 
   resources :users

@@ -1,58 +1,19 @@
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar bar-danger" style="width: 100%;"><i class="icon-tint"></i>Ruby</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
+<!--i class="icon-camera-retro" -->
+<!--i class="icon-cogs"></i-->
+<!--i class="icon-book"-->
+<!--i class="icon-tint"-->
 
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar  bar-success" style="width: 100%;"><i class="icon-cogs"></i>Java</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
 
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar  bar-success" style="width: 100%;"><i class="icon-cogs"></i>C#</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar  bar-warning" style="width: 90%;"><i class="icon-camera-retro"></i>Objective C</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
-
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar  bar-success" style="width: 70%;"><i class="icon-cogs"></i>Android</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
-
-<!-- begin .skill-item -->
-<div class="skill-item row-fluid">
-  <div class="span12 skill-bar">
-    <div class="progress">
-      <div class="bar " style="width: 60%;"><i class="icon-book"></i>Java Script</div>
-    </div>
-  </div>
-</div>
-<!-- end .skill-item -->
+<% if @skills.present? %>
+    <% @skills.each do |skill| %>
+        <!-- begin .skill-item -->
+        <div class="skill-item row-fluid">
+          <div class="span12 skill-bar">
+            <div class="progress">
+              <div class="bar bar-danger" style="width: <%= skill.skill_level %>%;"><i class="icon-tint"></i><%= skill.skill_name %></div>
+            </div>
+          </div>
+        </div>
+        <!-- end .skill-item -->
+    <% end %>
+<% end %>
