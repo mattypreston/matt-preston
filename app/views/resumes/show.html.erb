@@ -4,10 +4,12 @@
 </div>
 
 <dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @resume.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @resume.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:experience) %>:</strong></dt>
-  <dd><%= @resume.experience %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:objective) %>:</strong></dt>
+  <dd><%= @resume.objective %></dd>
 </dl>
 
 <div class="form-actions">

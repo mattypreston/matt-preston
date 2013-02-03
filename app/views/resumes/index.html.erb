@@ -5,9 +5,9 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:experience) %></th>
+      <th><%= model_class.human_attribute_name(:objective) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= link_to resume.id, resume_path(resume) %></td>
         <td><%= resume.title %></td>
-        <td><%= resume.experience %></td>
+        <td><%= resume.objective %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_resume_path(resume), :class => 'btn btn-mini' %>

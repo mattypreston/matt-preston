@@ -1,12 +1,15 @@
 <!-- begin .vcard-bio -->
 <div class="vcard-bio">
-  <h2 class="vcard-name">Matt Preston</h2>
 
-  <hr/>
+  <% if @resumes.first.present? %>
+    <h2 class="vcard-name"><%= @resumes.first.name %></h2>
+    <hr/>
+    <p><%= @resumes.first.objective %></p>
+    <hr/>
 
-  <p>I am a software architect passionate about agile development languages, tools and methodologies. I will bring an un paralleled enthusiasm and drive to your organisation. I am a BDD proponent with real world experience in delivering enterprise systems.  </p>
+  <% end %>
 
-  <hr/>
+
 
   <%= render :partial => 'home/skills' %>
 

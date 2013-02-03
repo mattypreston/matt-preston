@@ -1,3 +1,7 @@
 <div class="span12">
-    <h4 class="intro-slogan css3-gradient">Hello world!<br/>Let me introduce myself.</h4>
+    <h4 class="intro-slogan css3-gradient">
+      <% if @resumes.first.present? %>
+        <%= @resumes.first.title %>
+      <% end %>
+    </h4>
 </div>
