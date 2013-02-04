@@ -1,0 +1,27 @@
+<%- model_class = EducationHistory -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:place_of_study) %>:</strong></dt>
+  <dd><%= @education_history.place_of_study %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date_from) %>:</strong></dt>
+  <dd><%= @education_history.date_from %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date_to) %>:</strong></dt>
+  <dd><%= @education_history.date_to %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:summary) %>:</strong></dt>
+  <dd><%= @education_history.summary %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              education_histories_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_education_history_path(@education_history), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              education_history_path(@education_history),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
