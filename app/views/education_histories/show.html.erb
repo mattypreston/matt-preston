@@ -7,9 +7,9 @@
   <dt><strong><%= model_class.human_attribute_name(:place_of_study) %>:</strong></dt>
   <dd><%= @education_history.place_of_study %></dd>
   <dt><strong><%= model_class.human_attribute_name(:date_from) %>:</strong></dt>
-  <dd><%= @education_history.date_from.strftime('%d-%m-%Y') %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:date_to) %>:</strong></dt>
-  <dd><%= @education_history.date_to.strftime('%d-%m-%Y') %></dd>
+  <dd><%= @education_history.date_from.strftime('%Y-%m-%d') rescue Date.today.strftime('%Y-%m-%d') %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date_to)  %>:</strong></dt>
+  <dd><%= @education_history.date_to.strftime('%Y-%m-%d') rescue Date.today.strftime('%Y-%m-%d') %></dd>
   <dt><strong><%= model_class.human_attribute_name(:summary) %>:</strong></dt>
   <dd><%= @education_history.summary %></dd>
 </dl>

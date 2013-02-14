@@ -1,5 +1,5 @@
 def create_education_history
-  @education_history ||= { :place_of_study => "Place of study", :date_from => 15.years.ago.strftime('%m-%d-%Y'), :date_to => 10.years.ago.strftime('%m-%d-%Y'), :summary => 'Education history summary' }
+  @education_history ||= { :place_of_study => "Place of study", :date_from => 10.years.ago.strftime('%Y-%m-%d'), :date_to => 5.years.ago.strftime('%Y-%m-%d'), :summary => 'Education history summary' }
 end
 
 Given /^a set of education histories like this:$/ do |table|
@@ -15,7 +15,9 @@ When /^I add a new education history/ do
   create_education_history
   click_link "New"
   fill_in "education_history_place_of_study", :with => @education_history[:place_of_study]
+  puts @education_history[:date_from]
   fill_in "education_history_date_from", :with => @education_history[:date_from]
+  puts @education_history[:date_to]
   fill_in "education_history_date_to", :with => @education_history[:date_to]
   fill_in "education_history_summary", :with => @education_history[:summary]
   click_button "Create Education history"

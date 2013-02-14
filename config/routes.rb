@@ -1,5 +1,8 @@
 MattPreston::Application.routes.draw do
 
+  resources :experience_histories
+
+
   resources :education_histories
 
 

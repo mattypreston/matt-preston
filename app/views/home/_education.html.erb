@@ -2,21 +2,23 @@
 <div class="section section-education row">
   <h3 class="css3-gradient-2"><i class="icon-book"></i>Education</h3>
 
-  <div class="section-education-list row-fluid">
+    <div class="section-education-list row-fluid">
+
     <% count = 0 %>
     <% @education_histories.each do |education_history| %>
+        <% count += 1 %>
         <div class="span6 education-item">
-          <h4><i class="icon-circle-arrow-right"></i><%= education_history.place_of_study %> <small><%= education_history.date_from.strftime('%Y') %> &mdash; <%= education_history.date_to.strftime('%Y')%></small></h4>
+          <h4><i class="icon-circle-arrow-right"></i><%= education_history.place_of_study %> <small><%= education_history.date_from.strftime('%Y') rescue Date.today.strftime('%Y') %> &mdash; <%= education_history.date_to.strftime('%Y') rescue Date.today.strftime('%Y') %></small></h4>
           <%= education_history.summary %>
         </div>
-
-        <!--div class="span6 education-item">
-          <h4><i class="icon-circle-arrow-right"></i>Salford University <small>1993 &mdash; 1997</small></h4>
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        </div-->
+        <% if count.remainder(2) == 0 %>
+          </div>
+          <div class="section-education-list row-fluid">
+        <% end %>
     <% end %>
-  </div>
-
+    <% if count == 0 or count == 1 %>
+      </div>
+    <% end %>
 
 </div>
 <!-- end .section-education -->

@@ -6,5 +6,6 @@ class HomeController < ApplicationController
     @resumes = Resume.all rescue nil
     @skills = Skill.all rescue nil
     @education_histories = EducationHistory.all rescue nil
+    @experience_histories = ExperienceHistory.all rescue nil
   end
 end

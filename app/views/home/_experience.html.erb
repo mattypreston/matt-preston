@@ -3,6 +3,25 @@
   <h3 class="css3-gradient-2"><i class="icon-briefcase"></i>Experience</h3>
 
   <div class="section-work-list row-fluid">
+
+      <% count = 0 %>
+      <% @experience_histories.each do |experience_history| %>
+          <% count += 1 %>
+          <div class="span6 work-item">
+            <h4><i class="icon-github"></i><%= experience_history.position %> <small><%= experience_history.place_of_work %></small> <small><%= experience_history.date_from.strftime('%Y') rescue Date.today.strftime('%Y') %> &mdash; <%= experience_history.date_to.strftime('%Y') rescue Date.today.strftime('%Y') %></small></h4>
+            <%= experience_history.summary rescue "Missing summary" %>
+          </div>
+          <% if count.remainder(2) == 0 %>
+            </div>
+            <div class="section-education-list row-fluid">
+          <% end %>
+      <% end %>
+
+  <% if count == 0 or count == 1 %>
+    </div>
+  <% end %>
+
+  <!--div class="section-work-list row-fluid">
     <div class="span6 work-item">
       <h4><i class="icon-wrench"></i>Software Architect <small>2011 &mdash; Present</small></h4>
       Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
@@ -20,6 +39,6 @@
     <div class="span6 work-item">
       <h4><i class="icon-question-sign"></i>Software Support <small>1997 &mdash; 2001</small></h4>
       Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</div>
-  </div>
+  </div-->
 </div>
 <!-- end .section-work -->
