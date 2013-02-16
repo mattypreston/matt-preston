@@ -23,13 +23,14 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" #Keep only the last 5 releases
-before "deploy:assets:precompile", "deploy:assets:clean", "bundle:install"
+before "deploy:assets:precompile", "bundle:install"
+
 
 namespace :deploy do
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
-      run "/etc/init.d/unicorn_#{application} #{command}"
+      run "#{sudo} /etc/init.d/unicorn_#{application} #{command}"
       desc "Restarting Nginx"
       run "#{sudo} service nginx #{command}"
     end
